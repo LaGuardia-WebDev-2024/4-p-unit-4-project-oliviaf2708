@@ -1,69 +1,103 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
-[ ] One Google Font or Uploaded Font
-[ ] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[ YES ] Three Distinct CSS font-family Declarations
+[ YES ] One Google Font or Uploaded Font
+[ YES ] An Unordered **or** Ordered List (<ul> or <ol>)
+[ YES ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect 
-[ no ] Feature 2 - Change the <li> markers
+[ YES ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
 [ no ] Feature 4 - Include Hand Drawn Border
 [ no ] Feature 5 - Use background-blend-mode: overlay
 -->
 
 <!DOCTYPE html>
-<html>
+<html id="wholethang">
 
 <head>
   <title>Unit 4 Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <style>
+
+    #trains {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #walk {
+      font-family: Delius Swash Caps, cursive;
+    }
+
+    #food {
+      font-family: cursive;
+    }
+    
+    li::marker {
+      content: "🛫";
+      font-size: 1.2em;
+    }
+
+     #wholethang {
+      text-align: center;
+      margin: auto;
+    }
 
   </style>
 </head>
 <body>
 
   <h1>My Unofficial Local Guide to Brooklyn</h1>
+
+  <ol>
+    <li><a href="#Transit">New York Transit Museum</a></li>
+    <li><a href="#Promenade">Brooklyn Heights Promenade</a></li>
+    <li><a href="#Cafe">The River Cafe</a></li>
+  </ol>
   <br>
 
-  <h3>New York Transit Museum</h3>
+
+  <h3 id="Transit">New York Transit Museum</h3>
   <hr>
-  <p>The New York Transit Museum is located inside a decommissioned subway station at 99<br>
+  <p id="trains">The New York Transit Museum is located inside a decommissioned subway station at 99<br>
      Schermerhorn Street. It exhibits the long history of NYC public transportation. Inside<br>
      of the museum, you can find vintage subway cars, turnstiles, buses, and displays of transit<br> 
      engineering and history. Visitors are able to walk through, sit in, and view these pieces<br>
      of New York History. There are also special "Nostalgia Rides" on vintage trains that are<br>
-     ticketed sperearly from regualr entry.<br>
+     ticketed sperearly from regualr entry.<br><br>
     
     <img src="https://i1.wp.com/www.goodlifereport.com/wp-content/uploads/2015/06/nyc-transit-museum.png?fit=900%2C600&ssl=1" width="200">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6ByMfYFpIUFNs2GIysnCaqVr45KpNfJCGQ&s" width="178">
   </p>
   <br><br>
 
-  <h3>Brooklyn Heights Promenade</h3>
+  <h3 id="Promenade">Brooklyn Heights Promenade</h3>
   <hr>
-  <p>The Brooklyn Heights Promenade is a walkway overlooking beautiful views of the Manhattan<br>
+  <p id="walk">The Brooklyn Heights Promenade is a walkway overlooking beautiful views of the Manhattan<br>
      Skyline, New York Harbor, and the Brooklyn Bridge. Built in the 1950s, its purpose was to cover<br>
      the BQE out of preservation for the neighborhood, but it now serves as a beautiful, quiet<br> 
      and atmospheric walk lined with historic townhouses, benches and trees. It also has a close<br> 
      proximity to Brooklyn Bridge Park, and a perfectly unobstructed view of the city. It is super<br>
-     popular for anything from a nice stroll to rollerblading.<br>
+     popular for anything from a nice stroll to rollerblading.<br><br>
     
      <img src="https://images.ctfassets.net/1aemqu6a6t65/1miJeeUxGAnqWW11mfEAFT/022dc9e4d49ae81de2faf843940ee5c8/brooklyn-heights-promenade-04-myrna-suarez" width="200">
      <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/212000/212141-Brooklyn-Heights-Promenade.jpg" width="238">
     </p>
   <br><br>
 
-  <h3>River Cafe</h3>
+  <h3 id="Cafe">The River Cafe</h3>
   <hr>
-  <p>The River Cafe is a delicious New American fine dining restaurant located under the Brooklyn<br>
+  <p id="food">The River Cafe is a delicious New American fine dining restaurant located under the Brooklyn<br>
      Bridge. Known for its romantic atmosphere and Skyline views, the establishment serves seasonal<br>
      dishes, and has won awards such as a Michelin star and a Wine Spectator Award of Excellence.<br>
-     The service is attentive, the ingredience are high quality, and the experience is amazing. Reservations<br>
-     are typically suggested as this restaurant is very popular.<br>
+     The service is attentive, the ingredience are high quality, and the experience is amazing. Reservations
+     are typically suggested as this restaurant is very popular.<br><br>
     
+     <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/5f/28/b3/the-river-cafe-fine-dining.jpg" width="200">
+     <img src="https://i.ytimg.com/vi/HEInZIV0aUs/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgTig5MA8=&rs=AOn4CLCnne8I_dW86Y56IUz9eMRc0tJhvw" width="237">
     </p>
   <br><br>
 
